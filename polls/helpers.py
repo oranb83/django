@@ -86,7 +86,6 @@ class Auth(object):
         headers = {
             'Content-Type': 'application/json;charset=UTF-8',
         }
-        requests.post(self.url, headers=headers, data=data)
         response = requests.post(self.url, data=data, headers=headers).json()
         token = '{} {}'.format(response['token_type'], response['access_token'])
 
