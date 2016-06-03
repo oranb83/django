@@ -49,9 +49,7 @@ class Price(object):
     url = 'https://api.lyft.com/v1/cost'
 
     def __init__(self, coordinates):
-        self.server_token = ''
         self.params = coordinates
-        self.params.update({'server_token': self.server_token})
 
     def create_result(self):
         response = self._get_cost_from_lyft()
