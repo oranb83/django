@@ -70,7 +70,7 @@ class Price(object):
 
         return result
 
-    def _get_cose_from_lyft(self):
+    def _get_cost_from_lyft(self):
         token = Auth().get_token()
         headers = {'Authorization': token}
 
