@@ -78,8 +78,8 @@ class Price(object):
 
 
 class Auth(object):
-    client_id = '5QGl6XoqSdpV'
-    client_secret = '4h4FgnFeZS4tbdKHYCDy0a9iTanl4ezV'
+    client_id = ''
+    client_secret = ''
     url = 'https://{}:{}@api.lyft.com/oauth/token'.format(client_id, client_secret)
 
     def get_token(self):
